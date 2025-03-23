@@ -1,7 +1,7 @@
 const fs= require('fs');
 const axios = require('axios');
 
-const API_KEY = '5ef4907143a310904b9d4fca4fc55ed0';  
+const API_KEY = 'API';  
 const CITY = 'London';
 
 async function whatsW() {
