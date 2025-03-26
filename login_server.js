@@ -5,7 +5,7 @@ const app= express();
 const port= 3000;
 const users= [ 
     {email: 'my@gmail.com',
-     pass: bcrypt.hashSync('pass'),
+     pass: bcrypt.hashSync('pass', 10),
      role: 'admin'
 }]
 app.use(express.json());
