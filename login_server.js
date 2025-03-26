@@ -25,7 +25,7 @@ app.post('/login', (req,res)=>{
     const token= jwt.sign(
         {email: user.email, role: user.role}, 
         process.env.JWT_SECRET,
-        {expiresIn,'24h'});
+        {expiresIn: '24h'});
     res.json({message: 'Success', token});
 });
 
